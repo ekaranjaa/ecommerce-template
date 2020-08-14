@@ -25,9 +25,13 @@ body {
 }
 
 .logo {
-  color: var(--accent);
   font-size: 1.5rem;
   font-family: 'Crimson Pro', serif;
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--accent);
 }
 
 .btn,
