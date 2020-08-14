@@ -26,7 +26,7 @@ body {
 
 .logo {
   color: var(--accent);
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-family: 'Crimson Pro', serif;
 }
 
@@ -64,7 +64,7 @@ h2 {
 
 .btn--outline {
   background: none;
-  border: solid 1.5px var(--primary);
+  box-shadow: inset 0 0 0 1.5px var(--primary);
 }
 
 .btn--outline:hover,
@@ -76,12 +76,10 @@ h2 {
 .btn--icon {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
 }
 
 .btn--icon .btn-text {
   margin: auto;
-  margin-left: 10px;
 }
 
 .btn--search {
@@ -169,7 +167,7 @@ img {
 .header {
   position: relative;
   height: 80vh;
-  max-height: 800px;
+  max-height: 300px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -314,6 +312,10 @@ img {
   --lg: 1024px;
  */
 @media screen and (min-width: 450px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+
   .btn,
   .input {
     padding: 8px 16px;
@@ -337,12 +339,17 @@ img {
     display: block;
   }
 
+  .header {
+    max-height: 500px;
+  }
+
   .products-content {
     display: grid;
     grid-template-columns: repeat(3, minmax(200px, 1fr));
   }
 
   .card-body {
+    align-items: center;
     flex-flow: row;
   }
 
@@ -360,6 +367,10 @@ img {
 }
 
 @media screen and (min-width: 1024px) {
+  .header {
+    max-height: 800px;
+  }
+
   .footer .container {
     flex-flow: row;
     align-items: center;
