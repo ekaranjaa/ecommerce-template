@@ -44,6 +44,7 @@ h2 {
   font-family: 'Crimson Pro', serif;
 }
 
+/* Buttons */
 .btn {
   padding: 5px 10px;
   display: inline-block;
@@ -107,6 +108,13 @@ img {
   object-fit: cover;
 }
 
+hr {
+  margin: 20px 0;
+  border: none;
+  border-top: solid 1px var(--shade);
+}
+
+/* Navbar */
 .navbar {
   position: sticky;
   top: 0;
@@ -234,6 +242,7 @@ img {
   grid-template-columns: repeat(2, 1fr);
 }
 
+/* Product card */
 .card {
   margin: auto;
   position: relative;
@@ -274,6 +283,7 @@ img {
   color: var(--accent);
 }
 
+/* Footer */
 .footer {
   position: relative;
   bottom: 0;
@@ -309,6 +319,59 @@ img {
 
 .footer .controls .btn {
   margin-left: 10px;
+}
+
+/* Product view page */
+.product-image {
+  margin: auto;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.product-details {
+  padding: 10px;
+}
+
+.product-details .name {
+  margin: auto;
+  font-size: 3rem;
+}
+
+.product-details .price {
+  color: var(--accent);
+  font-size: 1.5rem;
+}
+
+.product-details .description {
+  line-height: 1.5rem;
+}
+
+.product-details .sizes,
+.product-details .colors {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.product-details .size,
+.product-details .color {
+  margin: 0 10px;
+  height: 40px;
+  width: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 0 3px var(--shade);
+}
+
+.product-details .controls {
+  display: flex;
+  align-items: center;
+}
+
+.product-details .btn--primary {
+  width: 100%;
 }
 
 /* 
@@ -371,6 +434,12 @@ img {
 
   .footer .menu-items {
     flex-flow: row;
+  }
+
+  /* Product view page */
+  .product {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 

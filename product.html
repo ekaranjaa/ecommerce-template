@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000">
+    <title>The E Closet</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/885fbd8d84.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-top">
+                    <div class="logo">
+                        <a href="/">The E Closet</a>
+                    </div>
+                    <form class="search" action="#">
+                        <div class="search-box">
+                            <select class="input input--search">
+                                <option value="All">All</option>
+                                <option value="Men">Men</option>
+                                <option value="Women">Women</option>
+                                <option value="Boys">Boys</option>
+                                <option value="Girls">Girls</option>
+                            </select>
+                            <input type="search" name="product_search" class="input input--search"
+                                placeholder="What are you looking for?">
+                            <button type="submit" class="btn btn--search"><i class="fas fa-search"></i></button>
+                        </div>
+                    </form>
+                    <div class="controls">
+                        <button class="btn search--toggle"><i class="fas fa-search"></i></button>
+                        <a href="#!" class="btn btn--outline">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="btn-text">CART</span>
+                        </a>
+                        <a href="#!" class="btn btn--primary">LOGIN</a>
+                    </div>
+                </div>
+                <ul class="menu">
+                    <li><a href="#!" class="menu-item">Sneakers</a></li>
+                    <li><a href="#!" class="menu-item">Apparel</a></li>
+                    <li><a href="#!" class="menu-item">Jewelry</a></li>
+                    <li><a href="#!" class="menu-item">Accessories</a></li>
+                </ul>
+            </div>
+        </nav>
+        <article class="product">
+            <div class="product-image">
+                <img src="./images/sweat-shirt.jpg" alt="Sweat Shirt">
+            </div>
+            <div class="product-details">
+                <h1 class="name">Sweat Shirt</h1>
+                <p class="price">Ksh 900</p>
+                <hr>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cum
+                    asperiores amet numquam sapiente vitae corporis quae? Velit deserunt illo, qui sequi doloribus
+                    voluptas eum iusto natus! Dolores, fuga quas?</p>
+                <hr>
+                <div class="colors">
+                    <div class="color" style="background: #000;"></div>
+                    <div class="color" style="background: #fff;"></div>
+                    <div class="color" style="background: #f00;"></div>
+                </div>
+                <div class="sizes">
+                    <div class="size">L</div>
+                    <div class="size">M</div>
+                    <div class="size">SM</div>
+                </div>
+                <hr>
+                <div class="controls">
+                    <button class="btn btn--primary btn--icon"><i class="fas fa-cart-plus"></i><span
+                            class="btn-text">ADD TO
+                            CART</span></button>
+                    <button class="btn"><i class="far fa-heart"></i></button>
+                </div>
+            </div>
+        </article>
+        <footer class="footer">
+            <div class="container">
+                <section class="copy">Copy &copy; The E Closet 2020</section>
+                <section class="postscript">
+                    <ul class="menu-items">
+                        <li><a href="#!" class="menu-item">About</a></li>
+                        <li><a href="#!" class="menu-item">Privacy policy</a></li>
+                        <li><a href="#!" class="menu-item">Return policy</a></li>
+                        <li><a href="#!" class="menu-item">Terms and conditions</a></li>
+                    </ul>
+                </section>
+                <div class="controls">
+                    <select class="zipcode input">
+                        <option value="Nairobi">Nairobi</option>
+                        <option value="Mombasa">Mombasa</option>
+                        <option value="Kisumu">Kisumu</option>
+                    </select>
+                    <section class="support">
+                        <a href="#!" class="btn btn--accent">GET SUPPORT</a>
+                    </section>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
